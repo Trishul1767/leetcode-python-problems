@@ -16,7 +16,10 @@ for i in l1:
             if j not in result:
                 result+=i*j
 print(result)'''
-    
+
+
+revised problem
+
 from collections import Counter
 
 a = "cervelo"
