@@ -1,0 +1,33 @@
+'''a="cervelo"
+d1={}
+for i in a:
+    if i in d1:
+        d1[i]+=1
+    else:
+        d1[i]=1
+l1=[]
+for i in d1.values():
+    l1.append(i)
+result=""
+l1=sorted(l1,reverse=True)
+for i in l1:
+    for j,k in d1.items():
+        if i==k:
+            if j not in result:
+                result+=i*j
+print(result)'''
+    
+from collections import Counter
+
+a = "cervelo"
+
+# 1. Counter does your entire first loop automatically
+freq = Counter(a) 
+print(freq)
+# 2. Sort the dictionary items based on the frequency (the value) in descending order
+sorted_chars = sorted(freq.items(), key=lambda x: x[1], reverse=True)
+print(sorted_chars)
+# 3. Rebuild the string using a list comprehension and join
+result = "".join([char * count for char, count in sorted_chars])
+
+print(result)
