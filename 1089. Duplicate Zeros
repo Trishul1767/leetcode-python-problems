@@ -1,0 +1,29 @@
+a=[1,2,3]
+n=len(a)
+l=0
+r=n-1
+while l<=r:
+    if a[l]==0:
+        a.pop(r)
+        a.insert(l,0)
+        l+=1
+    l+=1
+print(a)
+
+
+leetcode answer
+
+  s = 0
+  d = 0
+
+  # Copy is performed until the destination array is full.
+  for s in range(N):
+    if source[s] == 0:
+      # Copy zero twice.
+      destination[d] = 0
+      d += 1
+      destination[d] = 0
+    else:
+      destination[d] = source[s]
+
+    d += 1
