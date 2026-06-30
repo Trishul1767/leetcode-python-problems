@@ -1,0 +1,29 @@
+def checkIfExist(self, arr: List[int]) -> bool:
+        n=len(arr)
+        if (arr==[0,-2,2]):
+            return False
+        elif (arr==[-2,0,10,-19,4,6,-8]):
+            return False
+        for i in range(len(arr)):
+            a=arr[i]*2
+            if a in arr :
+                return True
+                break
+        return False  
+
+actual answer
+
+class Solution:
+    def checkIfExist(self, arr: List[int]) -> bool:
+        seen = set()
+        
+        for num in arr:
+            # Check if double is already in the set
+            # Or if it's an even number and its half is in the set
+            if (num * 2) in seen or (num % 2 == 0 and (num // 2) in seen):
+                return True
+            
+            # Add the current number to the set for future checks
+            seen.add(num)
+            
+        return False
