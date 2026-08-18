@@ -22,3 +22,6 @@ class Solution:
             return False
 
 #or by using counter method
+
+return Counter(s) == Counter(t)
+
