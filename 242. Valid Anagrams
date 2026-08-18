@@ -20,3 +20,5 @@ class Solution:
             return True
         else:
             return False
+
+#or by using counter method
