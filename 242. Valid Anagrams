@@ -25,3 +25,4 @@ class Solution:
 
 return Counter(s) == Counter(t)
 
+#counter method example
