@@ -41,3 +41,4 @@ freq1 = Counter(arr)
 for num, count in freq1.items():
     print(num, count)
 print(freq1)
+print(freq1[2])
