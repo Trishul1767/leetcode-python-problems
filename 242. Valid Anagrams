@@ -26,3 +26,18 @@ class Solution:
 return Counter(s) == Counter(t)
 
 #counter method example
+
+from collections import Counter
+arr = [1, 2, 2, 3, 3, 3, 4]
+freq = {}
+
+for x in arr:
+    if x in freq:
+        freq[x] += 1
+    else:
+        freq[x] = 1
+print(freq)
+freq1 = Counter(arr)
+for num, count in freq1.items():
+    print(num, count)
+print(freq1)
