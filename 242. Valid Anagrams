@@ -25,7 +25,7 @@ class Solution:
 
 return Counter(s) == Counter(t)
 
-#counter method example
+#counter method example code
 
 from collections import Counter
 arr = [1, 2, 2, 3, 3, 3, 4]
