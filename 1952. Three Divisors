@@ -9,7 +9,7 @@ if b==3:
 else:
     print("False")
 
-#leetcode discussion's solution
+#leetcode solution in the comments
 
 class Solution:
     def isThree(self, n: int) -> bool:
