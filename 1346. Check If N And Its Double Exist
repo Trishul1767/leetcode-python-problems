@@ -11,7 +11,7 @@ def checkIfExist(self, arr: List[int]) -> bool:
                 break
         return False  
 
-actual answer
+actual solution
 
 class Solution:
     def checkIfExist(self, arr: List[int]) -> bool:
